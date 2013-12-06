@@ -1,3 +1,40 @@
+# Fork specific readme
+This fork contains custom runners used within the ClientExecutor project for Code School.
+
+
+##Creating custom reporters
+In order to creat custom reporters, place the reporter file in lib/reporters. Make sure you
+export the module:
+
+```javascript
+exports = module.exports = ClientExecutorHTML;
+```
+
+Then, add the new reporter to the lib/reporters/index.js file:
+
+```javascript
+exports.ClientExecutorHTML = require('./clientExecutorHTML');
+```
+
+You can now use the reporter in your mocha setup:
+
+```javascript
+mocha.setup({
+  ui: 'bdd',
+  reporter: 'clientExecutorJSON' // Notice, camelcase starting with lower case even though the module name is all caps
+});
+```
+
+##Building mocha
+Make sure you have node and npm installed, the current version worked for me:
+node: v0.10.22
+npm: 1.3.14
+
+`npm install` - installs mocha dependencies
+`make` - runs tests, and compiles files
+
+#Normal mocha readme
+
  [![Build Status](https://secure.travis-ci.org/visionmedia/mocha.png)](http://travis-ci.org/visionmedia/mocha)
 
   [![Mocha test framework](http://f.cl.ly/items/3l1k0n2A1U3M1I1L210p/Screen%20Shot%202012-02-24%20at%202.21.43%20PM.png)](http://visionmedia.github.io/mocha)
