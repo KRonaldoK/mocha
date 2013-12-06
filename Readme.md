@@ -31,8 +31,9 @@ Make sure you have node and npm installed, the current version worked for me:
 * node: v0.10.22
 * npm: 1.3.14
 
-`npm install` - installs mocha dependencies
-`make` - runs tests, and compiles files
+
+* `npm install` - installs mocha dependencies
+* `make` - runs tests, and compiles files
 
 #Normal mocha readme
 
