@@ -3,7 +3,7 @@ This fork contains custom runners used within the ClientExecutor project for Cod
 
 
 ##Creating custom reporters
-In order to creat custom reporters, place the reporter file in lib/reporters. Make sure you
+In order to create custom reporters, place the reporter file in lib/reporters. Make sure you
 export the module:
 
 ```javascript
@@ -27,8 +27,9 @@ mocha.setup({
 
 ##Building mocha
 Make sure you have node and npm installed, the current version worked for me:
-node: v0.10.22
-npm: 1.3.14
+
+* node: v0.10.22
+* npm: 1.3.14
 
 `npm install` - installs mocha dependencies
 `make` - runs tests, and compiles files
